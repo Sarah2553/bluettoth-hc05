@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"bluettoth\startup_stm32f407xx.o"
+"bluettoth\main.o"
+"bluettoth\stm32f4xx_it.o"
+"bluettoth\stm32f4xx_hal_msp.o"
+"bluettoth\stm32f4xx_hal_tim.o"
+"bluettoth\stm32f4xx_hal_tim_ex.o"
+"bluettoth\stm32f4xx_hal_uart.o"
+"bluettoth\stm32f4xx_hal_rcc.o"
+"bluettoth\stm32f4xx_hal_rcc_ex.o"
+"bluettoth\stm32f4xx_hal_flash.o"
+"bluettoth\stm32f4xx_hal_flash_ex.o"
+"bluettoth\stm32f4xx_hal_flash_ramfunc.o"
+"bluettoth\stm32f4xx_hal_gpio.o"
+"bluettoth\stm32f4xx_hal_dma_ex.o"
+"bluettoth\stm32f4xx_hal_dma.o"
+"bluettoth\stm32f4xx_hal_pwr.o"
+"bluettoth\stm32f4xx_hal_pwr_ex.o"
+"bluettoth\stm32f4xx_hal_cortex.o"
+"bluettoth\stm32f4xx_hal.o"
+"bluettoth\stm32f4xx_hal_exti.o"
+"bluettoth\system_stm32f4xx.o"
+--strict --scatter "bluettoth\bluettoth.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bluettoth.map" -o bluettoth\bluettoth.axf
