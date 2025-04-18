@@ -26,6 +26,4 @@ The **HC-SR04** ultrasonic sensor measures distance by emitting an ultrasonic pu
 - Uses a Timer to measure the duration of the echo signal  
 - Displays a clean message if no object is detected
 
-# Project by Jmai Sarra  
-FST – STM32 Project – 2025
 
